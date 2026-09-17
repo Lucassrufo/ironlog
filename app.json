@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "IronLog",
+    "slug": "ironlog",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/ironlog-logo.png",
+    "scheme": "ironlog",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "O IronLog usa sua galeria para definir a foto do perfil."
+      }
+    },
+    "android": {
+      "package": "com.ironlog.app",
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/ironlog-logo.png",
+        "backgroundColor": "#05070B"
+      }
+    },
+    "splash": {
+      "image": "./assets/ironlog-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#05070B"
+    },
+    "web": {
+      "favicon": "./assets/ironlog-logo.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "19539268-596b-4967-8c94-e02858f52b8a"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
