@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { useTheme } from '../context/ThemeContext';
-import { getMuscleHighlights } from '../utils/exercisePresentation';
+import { useTheme } from '../../context/ThemeContext';
+import { getMuscleHighlights } from '../../utils/exercisePresentation';
 
 interface MuscleDiagramProps {
   label: string;

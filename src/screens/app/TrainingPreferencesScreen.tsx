@@ -4,15 +4,15 @@ import { useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AppButton } from '../components/AppButton';
-import { ExperienceLevel, WorkoutSplit } from '../types/models';
-import { LevelCard } from '../components/LevelCard';
-import { RootStackParamList } from '../types/navigation';
-import { WorkoutSplitCard } from '../components/WorkoutSplitCard';
-import { levelContent, levelOrder } from '../data/levels';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
-import { workoutSplitContent } from '../data/workouts';
+import { AppButton } from '../../components/ui/AppButton';
+import { ExperienceLevel, WorkoutSplit } from '../../types/models';
+import { LevelCard } from '../../components/training/LevelCard';
+import { RootStackParamList } from '../../types/navigation';
+import { WorkoutSplitCard } from '../../components/training/WorkoutSplitCard';
+import { levelContent, levelOrder } from '../../data/levels';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
+import { workoutSplitContent } from '../../data/workouts';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'TrainingPreferences'>;
 

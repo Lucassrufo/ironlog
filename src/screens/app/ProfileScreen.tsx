@@ -6,17 +6,17 @@ import { useMemo, useState } from 'react';
 import { Alert, Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AppButton } from '../components/AppButton';
-import { AppInput } from '../components/AppInput';
-import { BottomTabBar, bottomTabPadding } from '../components/BottomTabBar';
-import { RootStackParamList } from '../types/navigation';
-import { calculateBmi, parseMetricValue } from '../utils/bmi';
+import { AppButton } from '../../components/ui/AppButton';
+import { AppInput } from '../../components/ui/AppInput';
+import { BottomTabBar, bottomTabPadding } from '../../components/navigation/BottomTabBar';
+import { RootStackParamList } from '../../types/navigation';
+import { calculateBmi, parseMetricValue } from '../../utils/bmi';
 import { formatDuration } from './DashboardScreen';
-import { levelContent } from '../data/levels';
-import { validateProfileInput } from '../utils/profileValidation';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
-import { workoutSplitContent } from '../data/workouts';
+import { levelContent } from '../../data/levels';
+import { validateProfileInput } from '../../utils/profileValidation';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
+import { workoutSplitContent } from '../../data/workouts';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Profile'>;
 

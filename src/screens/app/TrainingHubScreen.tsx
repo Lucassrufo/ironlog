@@ -3,15 +3,15 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { BottomTabBar, bottomTabPadding } from '../components/BottomTabBar';
-import { MuscleDiagram } from '../components/MuscleDiagram';
-import { RootStackParamList } from '../types/navigation';
-import { getTargetMuscles } from '../utils/exercisePresentation';
-import { levelContent } from '../data/levels';
-import { limitPlansForUser } from '../utils/planPreferences';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
-import { getWorkoutPlans } from '../data/workouts';
+import { BottomTabBar, bottomTabPadding } from '../../components/navigation/BottomTabBar';
+import { MuscleDiagram } from '../../components/training/MuscleDiagram';
+import { RootStackParamList } from '../../types/navigation';
+import { getTargetMuscles } from '../../utils/exercisePresentation';
+import { levelContent } from '../../data/levels';
+import { limitPlansForUser } from '../../utils/planPreferences';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
+import { getWorkoutPlans } from '../../data/workouts';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'TrainingHub'>;
 

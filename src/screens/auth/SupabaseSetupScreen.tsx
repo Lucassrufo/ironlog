@@ -1,7 +1,7 @@
-﻿import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { AppButton } from '../../components/AppButton';
+import { AppButton } from '../../components/ui/AppButton';
 import { WebAuthLayout } from '../../components/web/WebAuthLayout';
 import { RootStackParamList } from '../../types/navigation';
 import { useAuth } from '../../context/AuthContext';

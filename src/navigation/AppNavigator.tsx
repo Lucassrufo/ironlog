@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { ActiveWorkoutScreen } from '../screens/ActiveWorkoutScreen';
+import { ActiveWorkoutScreen } from '../screens/app/ActiveWorkoutScreen';
 import { AuthLandingScreen } from '../screens/auth/AuthLandingScreen';
 import { AuthLoadingScreen } from '../screens/auth/AuthLoadingScreen';
 import { CompleteOAuthProfileScreen } from '../screens/auth/CompleteOAuthProfileScreen';
@@ -16,18 +16,18 @@ import { TrainerStudentDetailScreen } from '../screens/platform/trainer/TrainerS
 import { TrainerStudentsScreen } from '../screens/platform/trainer/TrainerStudentsScreen';
 import { useAuth } from '../context/AuthContext';
 import { useUser } from '../context/UserContext';
-import { DashboardScreen } from '../screens/DashboardScreen';
-import { ExerciseDetailScreen } from '../screens/ExerciseDetailScreen';
-import { ExerciseLibraryScreen } from '../screens/ExerciseLibraryScreen';
+import { DashboardScreen } from '../screens/app/DashboardScreen';
+import { ExerciseDetailScreen } from '../screens/app/ExerciseDetailScreen';
+import { ExerciseLibraryScreen } from '../screens/app/ExerciseLibraryScreen';
 import { OnboardingNavigator } from './OnboardingNavigator';
-import { ProfileScreen } from '../screens/ProfileScreen';
-import { ProgressScreen } from '../screens/ProgressScreen';
+import { ProfileScreen } from '../screens/app/ProfileScreen';
+import { ProgressScreen } from '../screens/app/ProgressScreen';
 import { RootStackParamList } from '../types/navigation';
-import { TrainingHubScreen } from '../screens/TrainingHubScreen';
-import { TrainingPreferencesScreen } from '../screens/TrainingPreferencesScreen';
-import { WorkoutScheduleScreen } from '../screens/WorkoutScheduleScreen';
-import { WorkoutSummaryScreen } from '../screens/WorkoutSummaryScreen';
-import { WorkoutCompleteScreen } from '../screens/WorkoutCompleteScreen';
+import { TrainingHubScreen } from '../screens/app/TrainingHubScreen';
+import { TrainingPreferencesScreen } from '../screens/app/TrainingPreferencesScreen';
+import { WorkoutScheduleScreen } from '../screens/app/WorkoutScheduleScreen';
+import { WorkoutSummaryScreen } from '../screens/app/WorkoutSummaryScreen';
+import { WorkoutCompleteScreen } from '../screens/app/WorkoutCompleteScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 

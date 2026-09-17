@@ -1,8 +1,8 @@
-﻿import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useEffect, useState } from 'react';
 import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { AppButton } from '../../../components/AppButton';
+import { AppButton } from '../../../components/ui/AppButton';
 import { WebDashboardLayout, WebMetricCard, WebPanel } from '../../../components/web/WebDashboardLayout';
 import { RootStackParamList } from '../../../types/navigation';
 import { assignRoutineToStudent, listTrainerRoutines } from '../../../services/platform/routineService';

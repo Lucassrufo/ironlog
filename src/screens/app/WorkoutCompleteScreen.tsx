@@ -4,11 +4,11 @@ import { useEffect, useMemo, useRef } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AppButton } from '../components/AppButton';
-import { RootStackParamList } from '../types/navigation';
+import { AppButton } from '../../components/ui/AppButton';
+import { RootStackParamList } from '../../types/navigation';
 import { formatDuration } from './DashboardScreen';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'WorkoutComplete'>;
 

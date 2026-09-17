@@ -4,14 +4,14 @@ import { useMemo, useRef, useState } from 'react';
 import { Animated, LayoutAnimation, Platform, Pressable, ScrollView, StyleSheet, Text, UIManager, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { BottomTabBar, bottomTabPadding } from '../components/BottomTabBar';
-import { MuscleDiagram } from '../components/MuscleDiagram';
-import { getWorkoutPlans, workoutPlansBySplit } from '../data/workouts';
-import { ExperienceLevel, WorkoutSplit } from '../types/models';
-import { RootStackParamList } from '../types/navigation';
-import { getExerciseEquipment, muscleLibrary, normalizeMuscleName } from '../utils/exercisePresentation';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
+import { BottomTabBar, bottomTabPadding } from '../../components/navigation/BottomTabBar';
+import { MuscleDiagram } from '../../components/training/MuscleDiagram';
+import { getWorkoutPlans, workoutPlansBySplit } from '../../data/workouts';
+import { ExperienceLevel, WorkoutSplit } from '../../types/models';
+import { RootStackParamList } from '../../types/navigation';
+import { getExerciseEquipment, muscleLibrary, normalizeMuscleName } from '../../utils/exercisePresentation';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'ExerciseLibrary'>;
 type LibraryTab = 'muscle' | 'equipment' | 'favorites';

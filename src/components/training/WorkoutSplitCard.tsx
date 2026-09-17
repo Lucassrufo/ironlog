@@ -1,16 +1,17 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../../context/ThemeContext';
 
-interface LevelCardProps {
+interface WorkoutSplitCardProps {
+  eyebrow: string;
   title: string;
   description: string;
   selected: boolean;
   onPress: () => void;
 }
 
-export function LevelCard({ title, description, selected, onPress }: LevelCardProps) {
+export function WorkoutSplitCard({ eyebrow, title, description, selected, onPress }: WorkoutSplitCardProps) {
   const { theme } = useTheme();
 
   return (
@@ -27,7 +28,7 @@ export function LevelCard({ title, description, selected, onPress }: LevelCardPr
       ]}
     >
       <View style={styles.header}>
-        <Ionicons name="barbell-outline" size={24} color={selected ? '#FFFFFF' : theme.colors.primary} />
+        <Text style={[styles.eyebrow, { color: selected ? '#EAF4FF' : theme.colors.primary }]}>{eyebrow}</Text>
         {selected ? <Ionicons name="checkmark-circle" size={24} color="#FFFFFF" /> : null}
       </View>
       <Text style={[styles.title, { color: selected ? '#FFFFFF' : theme.colors.text }]}>{title}</Text>
@@ -44,13 +45,19 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   header: {
+    minHeight: 26,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  eyebrow: {
+    fontSize: 12,
+    fontWeight: '900',
+    textTransform: 'uppercase',
+  },
   title: {
-    fontSize: 20,
-    fontWeight: '800',
+    fontSize: 21,
+    fontWeight: '900',
   },
   description: {
     fontSize: 14,

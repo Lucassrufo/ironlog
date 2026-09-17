@@ -4,15 +4,15 @@ import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { BottomTabBar, bottomTabPadding } from '../components/BottomTabBar';
-import { MuscleDiagram } from '../components/MuscleDiagram';
-import { RootStackParamList } from '../types/navigation';
-import { addPeriodAnchor, filterRecordsByRange, getLocalDateKey, getPeriodRange, listDaysInRange, ProgressPeriod } from '../utils/datePeriods';
-import { normalizeMuscleName } from '../utils/exercisePresentation';
-import { calculateWorkoutTotals } from '../utils/workoutMetrics';
-import { getWorkoutPlans } from '../data/workouts';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
+import { BottomTabBar, bottomTabPadding } from '../../components/navigation/BottomTabBar';
+import { MuscleDiagram } from '../../components/training/MuscleDiagram';
+import { RootStackParamList } from '../../types/navigation';
+import { addPeriodAnchor, filterRecordsByRange, getLocalDateKey, getPeriodRange, listDaysInRange, ProgressPeriod } from '../../utils/datePeriods';
+import { normalizeMuscleName } from '../../utils/exercisePresentation';
+import { calculateWorkoutTotals } from '../../utils/workoutMetrics';
+import { getWorkoutPlans } from '../../data/workouts';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Progress'>;
 

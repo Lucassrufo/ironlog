@@ -1,4 +1,4 @@
-﻿import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 import { WebAuthLayout } from '../../components/web/WebAuthLayout';
 import { useTheme } from '../../context/ThemeContext';

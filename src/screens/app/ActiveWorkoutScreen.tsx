@@ -19,19 +19,19 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AppButton } from '../components/AppButton';
-import { MuscleDiagram } from '../components/MuscleDiagram';
-import { RootStackParamList } from '../types/navigation';
-import { ActiveWorkoutExerciseState, ExerciseExecutionMode, WorkoutExercise, WorkoutSetRecord } from '../types/models';
+import { AppButton } from '../../components/ui/AppButton';
+import { MuscleDiagram } from '../../components/training/MuscleDiagram';
+import { RootStackParamList } from '../../types/navigation';
+import { ActiveWorkoutExerciseState, ExerciseExecutionMode, WorkoutExercise, WorkoutSetRecord } from '../../types/models';
 import { formatDuration } from './DashboardScreen';
-import { normalizeMuscleName } from '../utils/exercisePresentation';
-import { getWorkoutPlans } from '../data/workouts';
-import { calculateWorkoutTotals, createSessionRecords } from '../utils/workoutMetrics';
-import { mapWorkoutRecordsToSessionPayload } from '../services/platform/platformMappers';
-import { syncWorkoutSession } from '../services/platform/sessionSyncService';
-import { useAuth } from '../context/AuthContext';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
+import { normalizeMuscleName } from '../../utils/exercisePresentation';
+import { getWorkoutPlans } from '../../data/workouts';
+import { calculateWorkoutTotals, createSessionRecords } from '../../utils/workoutMetrics';
+import { mapWorkoutRecordsToSessionPayload } from '../../services/platform/platformMappers';
+import { syncWorkoutSession } from '../../services/platform/sessionSyncService';
+import { useAuth } from '../../context/AuthContext';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'ActiveWorkout'>;
 

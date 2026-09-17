@@ -1,6 +1,6 @@
 import { KeyboardTypeOptions, Platform, StyleSheet, Text, TextInput, View } from 'react-native';
 
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../../context/ThemeContext';
 
 interface AppInputProps {
   label: string;

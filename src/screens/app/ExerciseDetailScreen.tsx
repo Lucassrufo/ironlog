@@ -4,11 +4,11 @@ import { useMemo, useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { MuscleDiagram } from '../components/MuscleDiagram';
-import { RootStackParamList } from '../types/navigation';
-import { getExerciseEquipment, getExerciseInstructions, normalizeMuscleName } from '../utils/exercisePresentation';
-import { getWorkoutPlans } from '../data/workouts';
-import { useTheme } from '../context/ThemeContext';
+import { MuscleDiagram } from '../../components/training/MuscleDiagram';
+import { RootStackParamList } from '../../types/navigation';
+import { getExerciseEquipment, getExerciseInstructions, normalizeMuscleName } from '../../utils/exercisePresentation';
+import { getWorkoutPlans } from '../../data/workouts';
+import { useTheme } from '../../context/ThemeContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'ExerciseDetail'>;
 type DetailTab = 'target' | 'instructions' | 'equipment';
@@ -20,7 +20,7 @@ const tabs: Array<{ key: DetailTab; label: string }> = [
 ];
 
 const exerciseDemoAssets: Record<string, number> = {
-  'supino inclinado com halteres': require('../../assets/videos/supino_inclinado_halteres.gif'),
+  'supino inclinado com halteres': require('../../../assets/videos/supino_inclinado_halteres.gif'),
 };
 
 function normalizeExerciseName(name: string) {

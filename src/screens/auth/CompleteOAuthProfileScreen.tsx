@@ -1,9 +1,9 @@
-﻿import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useState } from 'react';
 import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { AppButton } from '../../components/AppButton';
-import { AppInput } from '../../components/AppInput';
+import { AppButton } from '../../components/ui/AppButton';
+import { AppInput } from '../../components/ui/AppInput';
 import { AuthFeedback } from '../../components/web/AuthFeedback';
 import { WebAuthLayout } from '../../components/web/WebAuthLayout';
 import { getSafeAuthErrorMessage } from '../../services/auth/authGuards';

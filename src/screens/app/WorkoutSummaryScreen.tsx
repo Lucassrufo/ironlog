@@ -3,11 +3,11 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { RootStackParamList } from '../types/navigation';
+import { RootStackParamList } from '../../types/navigation';
 import { formatDuration } from './DashboardScreen';
-import { calculateWorkoutTotals } from '../utils/workoutMetrics';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
+import { calculateWorkoutTotals } from '../../utils/workoutMetrics';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'WorkoutSummary'>;
 

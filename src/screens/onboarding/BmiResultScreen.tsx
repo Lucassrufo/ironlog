@@ -2,10 +2,10 @@ import { Ionicons } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { AppButton } from '../../components/AppButton';
+import { AppButton } from '../../components/ui/AppButton';
 import { OnboardingHeader } from './OnboardingHeader';
 import { OnboardingStackParamList } from '../../types/navigation';
-import { Screen } from '../../components/Screen';
+import { Screen } from '../../components/ui/Screen';
 import { calculateBmi } from '../../utils/bmi';
 import { useTheme } from '../../context/ThemeContext';
 import { useUser } from '../../context/UserContext';

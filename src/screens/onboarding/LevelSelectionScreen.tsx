@@ -3,10 +3,10 @@ import { Alert, StyleSheet, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import { ExperienceLevel } from '../../types/models';
-import { LevelCard } from '../../components/LevelCard';
+import { LevelCard } from '../../components/training/LevelCard';
 import { OnboardingHeader } from './OnboardingHeader';
 import { OnboardingStackParamList } from '../../types/navigation';
-import { Screen } from '../../components/Screen';
+import { Screen } from '../../components/ui/Screen';
 import { levelContent, levelOrder } from '../../data/levels';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'LevelSelection'>;

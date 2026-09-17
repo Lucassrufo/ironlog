@@ -2,12 +2,12 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import { AppButton } from '../../components/AppButton';
+import { AppButton } from '../../components/ui/AppButton';
 import { WorkoutSplit } from '../../types/models';
 import { OnboardingHeader } from './OnboardingHeader';
 import { OnboardingStackParamList } from '../../types/navigation';
-import { Screen } from '../../components/Screen';
-import { WorkoutSplitCard } from '../../components/WorkoutSplitCard';
+import { Screen } from '../../components/ui/Screen';
+import { WorkoutSplitCard } from '../../components/training/WorkoutSplitCard';
 import { levelContent } from '../../data/levels';
 import { workoutSplitContent } from '../../data/workouts';
 import { useUser } from '../../context/UserContext';

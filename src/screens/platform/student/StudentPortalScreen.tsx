@@ -1,8 +1,8 @@
-﻿import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useMemo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { AppButton } from '../../../components/AppButton';
+import { AppButton } from '../../../components/ui/AppButton';
 import { ActivityList, AnimatedBarChart, DashboardColumns, DashboardGrid, DashboardSpotlight, EmptyState } from '../../../components/web/DashboardWidgets';
 import { WebDashboardLayout, WebMetricCard, WebPanel } from '../../../components/web/WebDashboardLayout';
 import { RootStackParamList } from '../../../types/navigation';

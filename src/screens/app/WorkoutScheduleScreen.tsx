@@ -3,13 +3,13 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { RootStackParamList } from '../types/navigation';
+import { RootStackParamList } from '../../types/navigation';
 import { formatDuration } from './DashboardScreen';
-import { getWorkoutPlans, workoutSplitContent } from '../data/workouts';
-import { levelContent } from '../data/levels';
-import { limitPlansForUser } from '../utils/planPreferences';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
+import { getWorkoutPlans, workoutSplitContent } from '../../data/workouts';
+import { levelContent } from '../../data/levels';
+import { limitPlansForUser } from '../../utils/planPreferences';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'WorkoutSchedule'>;
 

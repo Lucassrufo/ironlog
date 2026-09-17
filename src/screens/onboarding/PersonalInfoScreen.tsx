@@ -5,11 +5,11 @@ import * as ImagePicker from 'expo-image-picker';
 import { useState } from 'react';
 import { Alert, Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { AppButton } from '../../components/AppButton';
-import { AppInput } from '../../components/AppInput';
+import { AppButton } from '../../components/ui/AppButton';
+import { AppInput } from '../../components/ui/AppInput';
 import { OnboardingHeader } from './OnboardingHeader';
 import { OnboardingStackParamList } from '../../types/navigation';
-import { Screen } from '../../components/Screen';
+import { Screen } from '../../components/ui/Screen';
 import { useUser } from '../../context/UserContext';
 
 type Props = NativeStackScreenProps<OnboardingStackParamList, 'PersonalInfo'>;

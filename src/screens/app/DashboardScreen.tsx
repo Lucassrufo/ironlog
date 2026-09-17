@@ -4,20 +4,20 @@ import { useEffect, useMemo, useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AppButton } from '../components/AppButton';
-import { BottomTabBar, bottomTabPadding } from '../components/BottomTabBar';
-import { MuscleDiagram } from '../components/MuscleDiagram';
-import { RootStackParamList } from '../types/navigation';
-import { WorkoutExercise, WorkoutPlan } from '../types/models';
-import { getTargetMuscles, normalizeMuscleName } from '../utils/exercisePresentation';
-import { levelContent } from '../data/levels';
-import { limitPlansForUser } from '../utils/planPreferences';
-import { mapAssignedRoutineToWorkoutPlans } from '../services/platform/platformMappers';
-import { getActiveAssignedRoutine } from '../services/platform/routineService';
-import { useAuth } from '../context/AuthContext';
-import { useTheme } from '../context/ThemeContext';
-import { useUser } from '../context/UserContext';
-import { getWorkoutPlans, workoutSplitContent } from '../data/workouts';
+import { AppButton } from '../../components/ui/AppButton';
+import { BottomTabBar, bottomTabPadding } from '../../components/navigation/BottomTabBar';
+import { MuscleDiagram } from '../../components/training/MuscleDiagram';
+import { RootStackParamList } from '../../types/navigation';
+import { WorkoutExercise, WorkoutPlan } from '../../types/models';
+import { getTargetMuscles, normalizeMuscleName } from '../../utils/exercisePresentation';
+import { levelContent } from '../../data/levels';
+import { limitPlansForUser } from '../../utils/planPreferences';
+import { mapAssignedRoutineToWorkoutPlans } from '../../services/platform/platformMappers';
+import { getActiveAssignedRoutine } from '../../services/platform/routineService';
+import { useAuth } from '../../context/AuthContext';
+import { useTheme } from '../../context/ThemeContext';
+import { useUser } from '../../context/UserContext';
+import { getWorkoutPlans, workoutSplitContent } from '../../data/workouts';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Dashboard'>;
 

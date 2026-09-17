@@ -3,8 +3,8 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import { RootStackParamList } from '../types/navigation';
-import { useTheme } from '../context/ThemeContext';
+import { RootStackParamList } from '../../types/navigation';
+import { useTheme } from '../../context/ThemeContext';
 
 type MainTabRoute = 'Dashboard' | 'TrainingHub' | 'Progress' | 'ExerciseLibrary' | 'Profile';
 

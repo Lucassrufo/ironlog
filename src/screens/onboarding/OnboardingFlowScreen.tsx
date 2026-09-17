@@ -19,8 +19,8 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AppButton } from '../../components/AppButton';
-import { MuscleDiagram } from '../../components/MuscleDiagram';
+import { AppButton } from '../../components/ui/AppButton';
+import { MuscleDiagram } from '../../components/training/MuscleDiagram';
 import { useTheme } from '../../context/ThemeContext';
 import { useUser } from '../../context/UserContext';
 import {
